@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    height: 100vh;
+}
+.left{
+    background-color:chocolate ;
+    padding: 50px;
+    width: 300px;
+    overflow-y: scroll;
+}
+.right{
+    background-color: blanchedalmond;
+    padding: 100px 75px;
+    display: flex;
+}
+.left h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.timeline{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    border-left: 4px solid blue;
+}
+.timeline section{
+    position: relative;
+    padding-left: 15px;
+}
+.timeline h2{
+    cursor: pointer;
+    border: 1px solid;
+}
+.circle{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    left: -12px;
+    border-radius: 50%;
+}
+.display-none{
+    display: none;
+}
+p{
+    margin-top: 10px;
+    border: 1px solid;
+}
