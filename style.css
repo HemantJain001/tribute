@@ -10,7 +10,7 @@
     background-color:rgb(142, 203, 212) ;
     padding: 50px;
     padding-right: 100px;
-    width: 30%;
+    width: 300px;
     overflow-y: scroll;
 }
 .left h1{
@@ -69,5 +69,4 @@ p{
 .right{
     background-color:bisque;
     padding-right:285px;
-    text-align: center;
 }
