@@ -1,4 +1,10 @@
+var numberOfElements = 6
+for(var i=0;i<numberOfElements;i++){
+    dropdown(i);
+}
 
-function change(i){
-    document.querySelectorAll("p")[i].classList.toggle("display-none")
+function dropdown(num){
+    document.querySelectorAll(".timeline h2")[num].addEventListener("click",function (){
+        document.querySelectorAll(".timeline p")[num].classList.toggle("display-none");
+    });
 }
