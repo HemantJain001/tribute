@@ -50,14 +50,14 @@
 p{
     margin-top: 10px;
 }
-/* .right a{
+.right a{
     display: block;
     padding: 10px 100px;
     text-decoration: solid;
     color: black;
     text-align: center;
-}  */
-/* .right li{
+} 
+.right li{
     float: left;
 
 }
@@ -71,7 +71,7 @@ p{
     background-color:rgb(209, 180, 147);
     font-size: 130%;
 
-} */
+}
 .right{
     background-color:rgb(216, 255, 254);
     text-align: center;
