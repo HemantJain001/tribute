@@ -52,24 +52,25 @@ p{
 }
 .right a{
     display: block;
-    padding: 10px 100px;
+    padding: 0px 80px;
     text-decoration: solid;
     color: black;
-    text-align: center;
+    font-size: 120%;
 } 
 .right li{
     float: left;
+    text-align: center;
 
 }
 .right ul{
     overflow: hidden;
-    background-color:bisque;
+    background-color:rgb(216, 255, 254);
     text-align: center;
-    margin-top:10px
+    margin-top:2%
 }
 .right li:hover{
-    background-color:rgb(209, 180, 147);
-    font-size: 130%;
+    background-color:rgb(130, 207, 202);
+    font-size: 120%
 
 }
 .right{
@@ -80,7 +81,7 @@ p{
     color: rgb(29, 173, 130);
 }
 .right p{
-    padding: 20px 40px;
+    padding: 20px 10px;
 }
 .img1{
     margin-top: 3%;
@@ -138,3 +139,30 @@ border-radius: 10px;
         width: 100%;
     }
   }
+.menubar button{
+    padding: 2px 3px;
+    color:rgb(236, 228, 228);
+    background-color: #111212;
+    margin-top: 5%;
+    margin-left: 3%;
+
+  }
+.menubar .contents{
+    display: none;
+    position: absolute;
+    background-color: #cc2dc2;
+    box-shadow: 2px 2px 5px rgb(27, 23, 25);
+
+}
+.menubar a{
+    text-decoration:solid;
+    padding: 10px 10px;
+    color: black;
+    display: block;
+}
+.menubar:hover .contents{
+    display:inline-block;
+} 
+.menubar a:hover{
+    background-color: #db79c9;
+}
