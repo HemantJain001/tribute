@@ -1,5 +1,5 @@
 var numberOfElements = 6
-for(var i=0;i<numberOfElements;i++){
+for(var i=0;i<=numberOfElements;i++){
     dropdown(i);
 }
 
