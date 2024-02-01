@@ -48,15 +48,10 @@
     border-radius: 50%;
 }
 .display-none{
-    max-height: 0;
+    display: none;
 }
 p{
     margin-top: 10px;
-}
-.timeline p{
-    max-height: 200px;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
 }
 .right a{
     display: block;

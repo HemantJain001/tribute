@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .timeline p {
+            max-height: 1000px; /* Set a large initial value */
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .display-none {
+            max-height: 0 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="timeline">
+        <h2 onclick="dropdown(0)">Event 1</h2>
+        <p class="display-none">Description for Event 1</p>
+
+        <h2 onclick="dropdown(1)">Event 2</h2>
+        <p class="display-none">Description for Event 2</p>
+
+        <!-- Add more timeline events as needed -->
+
+    </div>
+
+    <script>
+        function dropdown(num) {
+            var paragraph = document.querySelectorAll(".timeline p")[num];
+            paragraph.classList.toggle("display-none");
+            if (paragraph.classList.contains("display-none")) {
+                paragraph.style.maxHeight = null;
+            } else {
+                paragraph.style.maxHeight = paragraph.scrollHeight + "px";
+            }
+        }
+    </script>
+
+</body>
+</html>
