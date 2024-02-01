@@ -9,13 +9,13 @@
 }
 .left{
     background-color: #e5e5e5;
-    /* background-color:#b6d6ff ; */
-    /* padding: 50px;
-    padding-right: 100px; */
     width: 40%;
     max-width: 450px;
     overflow-y: scroll;
     color: #14213d;
+    /* background-color:#b6d6ff ; */
+    /* padding: 50px;
+    padding-right: 100px; */
     /* color: #176B87; */
 }
 .left h1{
@@ -48,10 +48,15 @@
     border-radius: 50%;
 }
 .display-none{
-    display: none;
+    max-height: 0;
 }
 p{
     margin-top: 10px;
+}
+.timeline p{
+    max-height: 200px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 .right a{
     display: block;
@@ -84,6 +89,7 @@ p{
     text-align: center;
     width: 100%;
     padding: 2px;
+    overflow-y: scroll;
     color: #f1faee;
     /* color: rgb(29, 173, 130); */
 }
@@ -99,7 +105,7 @@ p{
     width: 300px;
 }
 .tribute-to{
-    margin-top: 6%;
+    margin-top: 3%;
     font-family: 'Sacramento', cursive;
     font-size: 230%;
 }
@@ -118,13 +124,14 @@ p{
     color: #14213d;
     background-color: #f1faee;
     border-radius: 20px;
+    transition: background-color 0.5s ease;
 }
 .buttons a:hover{
     display: block;
     margin: 20px auto;
     padding: 20px 80px;
     color: #14213d;
-    background-color: #ced4da;
+    background-color: rgb(206, 212, 218);
     border-radius: 20px;
 }
 
@@ -188,4 +195,53 @@ border-radius: 10px;
 } 
 .menubar a:hover{
     background-color: #db79c9;
+}
+
+/* Style For CARDS */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    width: calc(25% - 20px);
+    padding: 20px;
+    background-color: white;
+    color: #14213d;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(206, 212, 218,0.2);
+    background-color: #e5e5e5;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: calc(33.33% - 20px);
+    }
 }
